@@ -1,8 +1,55 @@
-body {
-
-}
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
   }
+
+.header {
+    background-color: #0C0C0E;
+}
+
+h1, ul {
+    margin: 0;
+}
+
+.nav_link {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+.nav-list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 450px;
+}
+
+.library_text {
+        color: #FFF;
+        font-family: Forum;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: 0.6px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon_profile {
+    padding-left: 40px;
+}
