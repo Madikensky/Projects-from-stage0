@@ -1,18 +1,27 @@
-.container {
-    max-width: 1440px;
+* {
+    box-sizing: border-box;
+  }
+
+  .body {
     margin: 0 auto;
   }
 
-.header {
-    background-color: #0C0C0E;
-}
+  .container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 
-h1, ul {
+  .header {
+    background-color: #0c0c0e;
+  }
+
+  h1,
+  ul {
     margin: 0;
-}
+  }
 
-.nav_link {
-    color: #FFF;
+  .nav_link {
+    color: #fff;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -20,36 +29,87 @@ h1, ul {
     line-height: 50px;
     text-decoration: none;
     cursor: pointer;
-}
+  }
 
-.nav_link:hover {
+  .nav_link:hover {
     text-decoration: underline;
-}
+  }
 
-.nav-list {
+  .nav-list {
     display: inline-flex;
     align-items: flex-start;
     gap: 30px;
     margin-left: 450px;
-}
+  }
 
-.library_text {
-        color: #FFF;
-        font-family: Forum;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: 0.6px;
-}
+  .library_text {
+    color: #fff;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+  }
 
-.wrapper {
+  .wrapper{
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+  }
 
-.icon_profile {
+  .icon_profile {
     padding-left: 40px;
-}
+  }
+
+  .welcome {
+    height: 600px;
+    flex-shrink: 0;
+    background: linear-gradient(
+        180deg,
+        #0c0c0e 0,
+        #0c0c0e 0.01%,
+        rgba(18, 18, 21, 0.1) 100%
+      ),
+      url(assets/png/welcome.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .overlay {
+    width: 1440px;
+    height: 300px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
+    position: relative;
+  }
+
+  .welcome-bg {
+    display: flex;
+    width: 600px;
+    height: 220px;
+    padding: 35px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #0c0c0e;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+  }
+
+  .welcome-text {
+    width: 520px;
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
