@@ -39,7 +39,7 @@
     display: inline-flex;
     align-items: flex-start;
     gap: 30px;
-    margin-left: 450px;
+    margin-left: 416px;
   }
 
   .library_text {
@@ -50,6 +50,7 @@
     font-weight: 400;
     line-height: 50px;
     letter-spacing: 0.6px;
+    margin-left: 20px;
   }
 
   .wrapper{
@@ -90,14 +91,14 @@
     display: flex;
     width: 600px;
     height: 220px;
-    padding: 35px 40px;
+    padding: 35px 0px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     background: #0c0c0e;
     position: absolute;
     top: 300px;
-    left: 0px;
+    margin-top: 10px;
   }
 
   .welcome-text {
@@ -112,4 +113,53 @@
     line-height: 50px; /* 125% */
     letter-spacing: 3px;
     text-transform: uppercase;
+    margin-right: 4px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .section-title {
+    margin-top: 20px;
+    display: inline-block;
+    height: 61px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about_text {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+  }
+
+  .line {
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #0C0C0E;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about_description {
+    width: 1440px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    margin-top: 40px;
   }
