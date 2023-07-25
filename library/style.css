@@ -163,3 +163,36 @@
     line-height: 40px; /* 200% */
     margin-top: 40px;
   }
+
+  .about_images {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+  }
+
+  .ab-image {
+    width: 450px;
+    height: 560px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: lightgray 50%;
+  }
+
+  .carousel_pagination {
+    flex-shrink: 0;
+  }
+
+  .pag_button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 40px 3px;
+    background-color: black;
+    border: 0;
+  }
+
+  .button1 {
+    background-color: #BB945F;
+  }
