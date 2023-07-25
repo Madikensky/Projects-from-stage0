@@ -129,7 +129,7 @@
     margin-right: auto;
   }
 
-  .about_text {
+  .section_text {
     color: #0C0C0E;
     font-family: Forum;
     font-size: 40px;
@@ -191,8 +191,13 @@
     margin: 40px 3px;
     background-color: black;
     border: 0;
+    padding: 5px 5px;
   }
 
   .button1 {
     background-color: #BB945F;
+  }
+
+  .favorites {
+    text-align: center;
   }
