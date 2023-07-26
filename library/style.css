@@ -201,3 +201,174 @@
   .favorites {
     text-align: center;
   }
+
+  .favorites_text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: start;
+    margin: 38px 20px;
+  }
+
+  .favorite_variants {
+    text-align: start;
+    margin: 38px 22px;
+  }
+
+  .season {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 89px;
+  }
+
+  input[type="radio"] {
+    transform: scale(1.4);
+  }
+
+  input[type="radio"] {
+    margin-right: 20px;
+    margin-top: 9px;
+    padding: 5px;
+  }
+
+  input[type="radio"]:checked + label {
+    font-weight: 700;
+  }
+
+  input[type="radio"]{
+    border-color: black;
+  }
+
+  .bg_description {
+    width: 550px;
+    height: 555px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 39px;
+  }
+
+  .books_container {
+    margin-right: 60px;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .book {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+    bottom: 0px;
+    right: -41px;
+  }
+
+  .staff_picks {
+    position: relative;
+    text-align: start;
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-top: 13px;
+  }
+
+  .staff_line {
+    height: 1px;
+    width: 64px;
+    background-color: #BB945F;
+    position: absolute;
+  }
+
+  .book_title {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: absolute;
+    top:59px;
+    left: 20px;
+
+  }
+
+  .book_author {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 21px;
+    top: 99px;
+  }
+
+  .book_description {
+    width: 355px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    text-align: start;
+    left: 20px;
+    top: 160px;
+    text-align: start;
+  }
+
+  .buy_btn {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #ffffff;
+    position: absolute;
+    left: 20px;
+    bottom: 14px
+  }
+
+  .buy_btn:active {
+    background-color: #BB945F;
+    border: none;
+  }
+  .disabled_button {
+    background-color: #ffffff;
+    border: 1px solid #BB945F;
+    color: #BB945F;
+  }
