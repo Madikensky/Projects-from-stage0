@@ -11,6 +11,10 @@
     max-width: 1440px;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   .header {
     background-color: #0c0c0e;
   }
@@ -229,6 +233,10 @@
     margin-right: 89px;
   }
 
+  .seasons {
+    color: black;
+  }
+
   input[type="radio"] {
     transform: scale(1.4);
   }
@@ -237,6 +245,7 @@
     margin-right: 20px;
     margin-top: 9px;
     padding: 5px;
+    accent-color: black;
   }
 
   input[type="radio"]:checked + label {
@@ -271,7 +280,7 @@
     width: 200px;
     height: 300px;
     flex-shrink: 0;
-    bottom: 0px;
+    bottom: -1px;
     right: -41px;
   }
 
@@ -363,12 +372,14 @@
     bottom: 14px
   }
 
-  .buy_btn:active {
+  .buy_btn:hover {
     background-color: #BB945F;
     border: none;
   }
-  .disabled_button {
-    background-color: #ffffff;
+
+  .disabled_button{
     border: 1px solid #BB945F;
     color: #BB945F;
+    pointer-events: none;
   }
+
