@@ -383,3 +383,162 @@
     pointer-events: none;
   }
 
+  .coffee_shop {
+    text-align: center;
+  }
+
+  .coffee_description {
+    width: 1400px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .shop_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .shop_drinks {
+    position: relative;
+    width: 500px;
+    height: 520px;
+  }
+
+  .drinks_text {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+  }
+
+  .title_and_price {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 215px;
+    text-align: start;
+  }
+
+  .price {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    right: -53px;
+  }
+
+  .line-2 {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin-top: 41px;
+    margin-right: 31px;
+  }
+
+  .list {
+    list-style-type: none;
+    display: flex;
+    gap: 43px;
+  }
+
+  .drinks {
+    position: absolute;
+    left: -20px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop_cakes {
+    width: 500px;
+    height: 520px;
+    position: relative;
+  }
+
+  .cakes_text {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -40px;
+    right: 22px;
+  }
+
+  .cakes {
+    position: absolute;
+    right: 109px;
+    top: 59px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-2 {
+    list-style-type: none;
+    display: flex;
+    gap: 61px;
+  }
+
+  .cakes_and_price {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 215px;
+    text-align: end;
+  }
+
+  .line-2_cake {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin-top: 41px;
+    margin-right: 0px;
+  }
+
+  .price_cake {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    right: -93px;
+  }
