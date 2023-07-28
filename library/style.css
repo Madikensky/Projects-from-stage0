@@ -900,3 +900,7 @@
   .rs_link {
     padding-left: 55px;
   }
+
+  .test {
+    display: none;
+  }
