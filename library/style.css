@@ -1,0 +1,906 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .body {
+    margin: 0 auto;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .header {
+    background-color: #0c0c0e;
+  }
+
+  h1, ul, h2 {
+    margin: 0;
+  }
+
+  .nav_link {
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .nav_link:hover {
+    text-decoration: underline;
+  }
+
+  .nav-list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 416px;
+  }
+
+  .library_text {
+    color: #fff;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    margin-left: 20px;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .icon_profile {
+    padding-left: 40px;
+  }
+
+  .welcome {
+    height: 600px;
+    flex-shrink: 0;
+    background: linear-gradient(
+        180deg,
+        #0c0c0e 0,
+        #0c0c0e 0.01%,
+        rgba(18, 18, 21, 0.1) 100%
+      ),
+      url(assets/png/welcome.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .overlay {
+    width: 1440px;
+    height: 300px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
+    position: relative;
+  }
+
+  .welcome-bg {
+    display: flex;
+    width: 600px;
+    height: 220px;
+    padding: 35px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #0c0c0e;
+    position: absolute;
+    top: 300px;
+    margin-top: 10px;
+  }
+
+  .welcome-text {
+    width: 520px;
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-right: 4px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .section-title {
+    margin-top: 20px;
+    display: inline-block;
+    height: 61px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section_text {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+  }
+
+  .line {
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #0C0C0E;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about_description {
+    width: 1440px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    margin-top: 40px;
+  }
+
+  .about_images {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+  }
+
+  .ab-image {
+    width: 450px;
+    height: 560px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: lightgray 50%;
+  }
+
+  .carousel_pagination {
+    flex-shrink: 0;
+  }
+
+  .pag_button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 40px 3px;
+    background-color: black;
+    border: 0;
+    padding: 5px 5px;
+  }
+
+  .button1 {
+    background-color: #BB945F;
+  }
+
+  .favorites {
+    text-align: center;
+  }
+
+  .favorites_text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: start;
+    margin: 38px 20px;
+  }
+
+  .favorite_variants {
+    text-align: start;
+    margin: 38px 22px;
+  }
+
+  .season {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 89px;
+    cursor: pointer;
+  }
+
+  .seasons {
+    color: black;
+  }
+
+  input[type="radio"] {
+    transform: scale(1.4);
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    margin-right: 20px;
+    margin-top: 9px;
+    padding: 5px;
+    accent-color: black;
+  }
+
+  input[type="radio"]:checked + label {
+    font-weight: 700;
+  }
+
+  input[type="radio"]{
+    border-color: black;
+  }
+
+  .bg_description {
+    width: 550px;
+    height: 555px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 39px;
+  }
+
+  .books_container {
+    margin-right: 60px;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .book {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+    bottom: -1px;
+    right: -41px;
+  }
+
+  .staff_picks {
+    position: relative;
+    text-align: start;
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-top: 13px;
+  }
+
+  .staff_line {
+    height: 1px;
+    width: 64px;
+    background-color: #BB945F;
+    position: absolute;
+  }
+
+  .book_title {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: absolute;
+    top:59px;
+    left: 20px;
+
+  }
+
+  .book_author {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 21px;
+    top: 99px;
+  }
+
+  .book_description {
+    width: 355px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    text-align: start;
+    left: 20px;
+    top: 160px;
+    text-align: start;
+  }
+
+  .buy_btn {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #ffffff;
+    position: absolute;
+    left: 20px;
+    bottom: 14px
+  }
+
+  .buy_btn:hover {
+    background-color: #BB945F;
+    border: none;
+    cursor: pointer;
+  }
+
+  .disabled_button{
+    border: 1px solid #BB945F;
+    color: #BB945F;
+    pointer-events: none;
+  }
+
+  .coffee_shop {
+    text-align: center;
+    height: 841px;
+  }
+
+  .coffee_description {
+    width: 1400px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .shop_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .shop_drinks {
+    position: relative;
+    width: 500px;
+    height: 520px;
+  }
+
+  .drinks_text {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+  }
+
+  .title_and_price {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 215px;
+    text-align: start;
+  }
+
+  .price {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    right: -53px;
+  }
+
+  .line-2 {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin-top: 41px;
+    margin-right: 31px;
+  }
+
+  .list {
+    list-style-type: none;
+    display: flex;
+    gap: 43px;
+  }
+
+  .drinks {
+    position: absolute;
+    left: -20px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop_cakes {
+    width: 500px;
+    height: 520px;
+    position: relative;
+  }
+
+  .cakes_text {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -40px;
+    right: 22px;
+  }
+
+  .cakes {
+    position: absolute;
+    right: 109px;
+    top: 59px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-2 {
+    list-style-type: none;
+    display: flex;
+    gap: 61px;
+  }
+
+  .cakes_and_price {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 215px;
+    text-align: end;
+  }
+
+  .line-2_cake {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin-top: 41px;
+    margin-right: 0px;
+  }
+
+  .price_cake {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    right: -93px;
+  }
+
+  .contacts {
+    text-align: center;
+  }
+
+  .contacts_info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: flex-start;
+    gap: 201px;
+    margin-top: 40px;
+    margin-bottom: 38px;
+  }
+
+  .map {
+    width: 696px;
+    height: 414px;
+  }
+
+  .numbers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: start;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .names {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2.4px;
+    text-transform: capitalize;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  .strong {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2.4px;
+    text-transform: capitalize;
+  }
+
+  .staff {
+    padding-top: 19px;
+  }
+
+  .director {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    display: flex;
+    margin-top: -19px;
+  }
+
+  .library_card {
+    text-align: center;
+  }
+
+  .library_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .find_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 9px;
+  }
+
+  .find_card_text {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+
+  .white_bg {
+    width: 600px;
+    height: 386px;
+    flex-shrink: 0;
+    border: 3px solid #BB945F;
+    background: #FFF;
+    padding-top: 17px;
+    padding-left: 18px;
+  }
+
+  .gold_bg {
+    width: 560px;
+    height: 272px;
+    flex-shrink: 0;
+    background: #BB945F;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .check_btn {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 10px 40px;
+    margin-right: 19px;
+    margin-top: 21px;
+    align-items: flex-end;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+  }
+
+
+  .card_input {
+    width: 520px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 26px;
+    color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+  }
+
+  .card_input::placeholder {
+    color: #8E8E8E;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+    padding-left: 15px;
+  }
+
+  .card_text {
+    color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .check_btn:hover {
+    background-color: #BB945F;
+    border: none;
+    cursor: pointer;
+  }
+
+  .reader_card {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 20px;
+  }
+
+  .reader_card_text {
+    color: #000;
+    text-align: center;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    padding-top: 10px;
+  }
+
+  .reader_card_description {
+    color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 0.4px;
+    width: 456px;
+    margin-top: 2px;
+  }
+
+  .reader_buttons {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .sign_btn {
+    display: flex;
+    width: 75px;
+    height: 30px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .sign_btn:hover {
+    background-color: #BB945F;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    margin-top: 41px;
+    background: #0C0C0E;
+    height: 250px;
+  }
+
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left_footer {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+
+  .social_links {
+    padding-top: 20px;
+    margin-left: -20px;
+  }
+
+  .link {
+    display: inline;
+    list-style-type: none;
+    margin-right: 12px;
+  }
+
+  .street {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    width: 229px;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    text-decoration: none;
+    flex-shrink: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .right_footer {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-top: 2px;
+  }
+
+  .work_time {
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+  }
+
+  .line-3 {
+    width: 1400px;
+    height: 1px;
+    background: #FFF;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bottom_footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    gap: 0px;
+  }
+
+  .bottom_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 2px;
+    padding-right: 40px;
+    text-decoration: none;
+  }
+
+  .rs_link {
+    padding-left: 55px;
+  }
+
+  .test {
+    display: none;
+  }
