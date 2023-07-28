@@ -231,6 +231,7 @@
     font-weight: 400;
     line-height: normal;
     margin-right: 89px;
+    cursor: pointer;
   }
 
   .seasons {
@@ -239,6 +240,7 @@
 
   input[type="radio"] {
     transform: scale(1.4);
+    cursor: pointer;
   }
 
   input[type="radio"] {
@@ -375,6 +377,7 @@
   .buy_btn:hover {
     background-color: #BB945F;
     border: none;
+    cursor: pointer;
   }
 
   .disabled_button{
@@ -385,6 +388,9 @@
 
   .coffee_shop {
     text-align: center;
+    height: 841px;
+    width: 1440px;
+    margin-left: 40px;
   }
 
   .coffee_description {
@@ -541,4 +547,70 @@
     text-transform: capitalize;
     position: absolute;
     right: -93px;
+  }
+
+  .contacts {
+    text-align: center;
+  }
+
+  .contacts_info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: flex-start;
+    gap: 201px;
+    margin-top: 40px;
+  }
+
+  .map {
+    width: 696px;
+    height: 414px;
+  }
+
+  .numbers {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: start;
+    white-space: nowrap;
+  }
+
+  .names {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2.4px;
+    text-transform: capitalize;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  .strong {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2.4px;
+    text-transform: capitalize;
+  }
+
+  .staff {
+    padding-top: 19px;
+  }
+
+  .director {
+    margin-top: -20px;
   }
