@@ -389,8 +389,6 @@
   .coffee_shop {
     text-align: center;
     height: 841px;
-    width: 1440px;
-    margin-left: 40px;
   }
 
   .coffee_description {
@@ -561,6 +559,7 @@
     align-items: flex-start;
     gap: 201px;
     margin-top: 40px;
+    margin-bottom: 38px;
   }
 
   .map {
@@ -614,3 +613,188 @@
   .director {
     margin-top: -20px;
   }
+
+  .library_card {
+    text-align: center;
+  }
+
+  .library_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .find_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 9px;
+  }
+
+  .find_card_text {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+
+  .white_bg {
+    width: 600px;
+    height: 386px;
+    flex-shrink: 0;
+    border: 3px solid #BB945F;
+    background: #FFF;
+    padding-top: 17px;
+    padding-left: 18px;
+  }
+
+  .gold_bg {
+    width: 560px;
+    height: 272px;
+    flex-shrink: 0;
+    background: #BB945F;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .check_btn {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 10px 40px;
+    margin-right: 19px;
+    margin-top: 21px;
+    align-items: flex-end;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+  }
+
+
+  .card_input {
+    width: 520px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 26px;
+    color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+  }
+
+  .card_input::placeholder {
+    color: #8E8E8E;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+    padding-left: 15px;
+  }
+
+  .card_text {
+    color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .check_btn:hover {
+    background-color: #BB945F;
+    border: none;
+    cursor: pointer;
+  }
+
+  .reader_card {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 20px;
+  }
+
+  .reader_card_text {
+    color: #000;
+    text-align: center;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    padding-top: 10px;
+  }
+
+  .reader_card_description {
+    color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 0.4px;
+    width: 456px;
+    margin-top: 2px;
+  }
+
+  .reader_buttons {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .sign_btn {
+    display: flex;
+    width: 75px;
+    height: 30px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .sign_btn:hover {
+    background-color: #BB945F;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    background: #0C0C0E;
+  }
+
