@@ -61,10 +61,10 @@
       <section class="about" id="about">
         <div class="container">
           <div class="section-title">
-            <div class="section_text">
+            <h2 class="section_text">
               About
               <div class="line"></div>
-            </div>
+            </h2>
           </div>
           <p class="about_description">
             The Brooklyn Library is a free workspace, a large number of books
@@ -85,10 +85,10 @@
       <section class="favorites" id="favorites">
         <div class="container">
           <div class="section-title">
-            <div class="section_text">
+            <h2 class="section_text">
               Favorites
               <div class="line"></div>
-            </div>
+            </h2>
           </div>
           <p class="favorites_text">Pick favorites of season</p>
           <div class="favorite_variants">
@@ -183,10 +183,10 @@
       <section class="coffee_shop" id="coffee_shop">
         <div class="container">
           <div class="section-title">
-            <div class="section_text">
+            <h2 class="section_text">
               Coffee Shop
               <div class="line"></div>
-            </div>
+            </h2>
           </div>
           <p class="coffee_description">
             In our library, we have of cozy coffee shop, welcoming in customers
@@ -271,21 +271,21 @@
       <section class="contacts" id="contacts">
         <div class="container">
           <div class="section-title">
-            <div class="section_text">
+            <h2 class="section_text">
               Our Contacts
               <div class="line"></div>
-            </div>
+            </h2>
           </div>
           <div class="contacts_info">
             <div class="contact_numbers">
               <div class="names">For all Library inquiries:</div>
-              <p class="numbers">Please call (617) 730-2370</p>
-              <p class="numbers">For TTY service, please call (617) 730-2370</p>
-              <p class="numbers">Putterham Library: (617) 730-2385</p>
+              <a class="numbers" href="tel:+76177302370">Please call (617) 730-2370</a>
+              <a class="numbers" href="tel:+76177302370">For TTY service, please call (617) 730-2370</a>
+              <a class="numbers" href="tel:+76177302385">Putterham Library: (617) 730-2385</a>
               <p class="names staff">Senior Staff</p>
-              <p class="numbers director">
-                Library Director: <strong>Amanda Hirst</strong>
-              </p>
+              <a class="director" href="mailto:AmandaHirst@gmail.com" >
+                Library Director: &nbsp;<strong>Amanda Hirst</strong>
+              </a>
             </div>
             <div class="contact_map">
               <img src="assets/png/map.png" alt="map" class="map" />
@@ -296,10 +296,10 @@
       <section class="library_card" id="library_card">
         <div class="container">
           <div class="section-title">
-            <div class="section_text">
+            <h2 class="section_text">
               Digital Library Cards
               <div class="line"></div>
-            </div>
+            </h2>
           </div>
           <div class="library_container">
             <div class="find_card">
@@ -308,23 +308,23 @@
                 <div class="gold_bg">
                   <p class="card_text">Brooklyn Public Library</p>
                   <form action="" class="card_form">
-                  <input
-                    type="text"
-                    name="card_input"
-                    id="reader_name"
-                    class="card_input"
-                    placeholder="Reader's name"
-                  />
-                  <label for="reader_name"></label>
-                  <input
-                    type="text"
-                    name="card_input"
-                    id="card_number"
-                    class="card_input"
-                    placeholder="Card number"
-                  />
-                  <label for="card_number"></label>
-                </form>
+                    <input
+                      type="text"
+                      name="card_input"
+                      id="reader_name"
+                      class="card_input"
+                      placeholder="Reader's name"
+                    />
+                    <label for="reader_name"></label>
+                    <input
+                      type="text"
+                      name="card_input"
+                      id="card_number"
+                      class="card_input"
+                      placeholder="Card number"
+                    />
+                    <label for="card_number"></label>
+                  </form>
                 </div>
                 <button class="check_btn">Check the card</button>
               </div>
@@ -346,7 +346,49 @@
     </main>
     <footer class="footer">
       <div class="container">
-
+        <div class="footer_container">
+          <div class="left_footer">
+            <a
+              href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/@40.6956458,-73.9912976,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a49b649b8c3:0x6342a2291cea2e!8m2!3d40.6956458!4d-73.9912976!16s%2Fg%2F11s2lgz8ns?entry=ttu"
+              class="street"
+              target="_blank"
+              >286 Cadman Plaza, New York, NY 11238, United States</a
+            >
+            <ul class="social_links">
+              <li class="link">
+                <a href="https://twitter.com/" target="_blank"
+                  ><img src="assets/svg/u_twitter-alt.svg" alt="twitter"
+                /></a>
+              </li>
+              <li class="link">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img src="assets/svg/u_instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li class="link">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img src="assets/svg/u_facebook-f.svg" alt="facebook"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="right_footer">
+            <p class="work_time">
+              Mon - Fri <br />
+              08:00 am - 07:00 pm
+            </p>
+            <p class="work_time">
+              Sat - Sun <br />
+              10:00 am - 06:00 pm
+            </p>
+          </div>
+        </div>
+        <div class="line-3"></div>
+        <div class="bottom_footer">
+          <div class="bottom_text">2023</div>
+          <a href="https://rs.school/js-stage0/" class="bottom_text rs_link" target="_blank">The Rolling Scopes School</a>
+          <a href="https://github.com/Madikensky" class="bottom_text" target="_blank">Madiyar</a>
+        </div>
       </div>
     </footer>
   </body>

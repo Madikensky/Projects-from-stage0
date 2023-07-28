@@ -19,8 +19,7 @@
     background-color: #0c0c0e;
   }
 
-  h1,
-  ul {
+  h1, ul, h2 {
     margin: 0;
   }
 
@@ -568,6 +567,9 @@
   }
 
   .numbers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -579,6 +581,7 @@
     text-transform: capitalize;
     text-align: start;
     white-space: nowrap;
+    text-decoration: none;
   }
 
   .names {
@@ -611,7 +614,18 @@
   }
 
   .director {
-    margin-top: -20px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    display: flex;
+    margin-top: -19px;
   }
 
   .library_card {
@@ -795,6 +809,94 @@
   }
 
   .footer {
+    margin-top: 41px;
     background: #0C0C0E;
+    height: 250px;
   }
 
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left_footer {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+
+  .social_links {
+    padding-top: 20px;
+    margin-left: -20px;
+  }
+
+  .link {
+    display: inline;
+    list-style-type: none;
+    margin-right: 12px;
+  }
+
+  .street {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    width: 229px;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    text-decoration: none;
+    flex-shrink: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .right_footer {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-top: 2px;
+  }
+
+  .work_time {
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+  }
+
+  .line-3 {
+    width: 1400px;
+    height: 1px;
+    background: #FFF;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bottom_footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    gap: 0px;
+  }
+
+  .bottom_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 2px;
+    padding-right: 40px;
+    text-decoration: none;
+  }
+
+  .rs_link {
+    padding-left: 55px;
+  }
