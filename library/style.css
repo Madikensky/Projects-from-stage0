@@ -905,3 +905,38 @@
   .test {
     display: none;
   }
+
+  @media (width: 768px) {
+
+     .nav-list {
+      display: none;
+     }
+
+     .overlay {
+      display: none;
+     }
+
+     .burger {
+      width: 45px;
+      height: 20px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      padding-top: 13px;
+      margin-left: 40px;
+      gap: 8.7px;
+    }
+
+    .icon_profile {
+      padding-left: 321px;
+    }
+
+    .burger-line {
+      border: 1px solid #ffffff;
+    }
+
+    .about_description {
+      width: 728px;
+      margin-left: 20px;
+    }
+  }
