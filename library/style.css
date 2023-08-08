@@ -32,6 +32,11 @@
     line-height: 50px;
     text-decoration: none;
     cursor: pointer;
+    list-style-type: none;
+  }
+
+  .nav_item {
+    list-style-type: none;
   }
 
   .nav_link:hover {
@@ -270,7 +275,8 @@
     border: 1px solid #000;
     position: relative;
     margin-top: 2px;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
+    margin-left: 69px;
   }
 
   .books_container {
@@ -308,9 +314,10 @@
 
   .staff_line {
     height: 1px;
-    width: 64px;
+    width: 60px;
     background-color: #BB945F;
     position: absolute;
+    left: 20px;
   }
 
   .book_title {
@@ -391,6 +398,9 @@
     pointer-events: none;
   }
 
+  .disabled_button2 {
+    display: none;
+  }
   .coffee_shop {
     text-align: center;
     height: 841px;
@@ -979,5 +989,22 @@
 
     .pag_button:nth-child(n + 4) {
       display: inline-block;
+    }
+
+    .favorite_variants {
+      width: 768px;
+      white-space: nowrap;
+    }
+
+    .disabled_button {
+      display: none;
+    }
+
+    .disabled_button2 {
+      display: inline-block;
+    }
+
+    .coffee_shop {
+      margin-top: 2px;
     }
   }
