@@ -276,7 +276,7 @@
     position: relative;
     margin-top: 2px;
     margin-bottom: 38px;
-    margin-left: 69px;
+    margin-left: 0px;
   }
 
   .books_container {
@@ -401,9 +401,11 @@
   .disabled_button2 {
     display: none;
   }
+
   .coffee_shop {
     text-align: center;
     height: 841px;
+    margin-top: 3px;
   }
 
   .coffee_description {
@@ -414,7 +416,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
     letter-spacing: 2px;
     margin-left: 20px;
     margin-top: 40px;
@@ -925,7 +927,7 @@
     display: none;
   }
 
-  @media (width: 768px) {
+  @media (max-width: 768px) {
 
      .nav-list {
       display: none;
@@ -1000,11 +1002,44 @@
       display: none;
     }
 
+    .bg_description {
+      margin-left: 69px;
+    }
+
     .disabled_button2 {
       display: inline-block;
     }
 
     .coffee_shop {
       margin-top: 2px;
+    }
+
+    .coffee_description {
+      width: 728px;
+      margin-left: 19px;
+      letter-spacing: 1.95px;
+    }
+
+    .shop_container {
+      flex-direction: column;
+    }
+
+    .cakes {
+      margin-top: 40px;
+      right: -160px;
+    }
+
+    .cakes_text {
+      right: -247px;
+      top: 0px;
+    }
+    .contacts {
+      display: none;
+    }
+    .library_card {
+      display: none;
+    }
+    .footer {
+      display: none;
     }
   }
