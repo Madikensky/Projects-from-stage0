@@ -890,13 +890,13 @@
     width: 1400px;
     height: 1px;
     background: #FFF;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
   }
 
   .bottom_footer {
-    margin-top: 25px;
+    margin-top: 45px;
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
@@ -1079,7 +1079,7 @@
       margin-top: 4px;
     }
 
-    .footer {
-      display: none;
+    .rs_link {
+      margin-right: 60px;
     }
   }
