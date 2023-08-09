@@ -715,6 +715,7 @@
 
 
   .card_input {
+    border: 0px;
     width: 520px;
     height: 66px;
     flex-shrink: 0;
@@ -1045,7 +1046,37 @@
     }
 
     .library_card {
-      display: none;
+      margin-top: 516px;
+    }
+
+    .library_container {
+      flex-direction: column;
+    }
+
+    .find_card {
+      margin-left: -20px;
+    }
+
+    .reader_card {
+      text-align: center;
+      align-items: center;
+    }
+
+    .reader_card_text {
+      margin-top: 13px;
+      margin-left: 20px;
+    }
+
+    .reader_card_description {
+      text-align: center;
+      width: 600px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .reader_buttons {
+      margin-left: 20px;
+      margin-top: 4px;
     }
 
     .footer {
