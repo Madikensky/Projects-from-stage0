@@ -1033,12 +1033,21 @@
       right: -247px;
       top: 0px;
     }
+
     .contacts {
-      display: none;
+      margin-top: 640px;
     }
+
+    .contact_map {
+      position: relative;
+      right: 690px;
+      top: 480px;
+    }
+
     .library_card {
       display: none;
     }
+
     .footer {
       display: none;
     }
