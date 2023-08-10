@@ -39,6 +39,10 @@
     list-style-type: none;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   .nav_link:hover {
     text-decoration: underline;
   }
@@ -63,13 +67,13 @@
 
   .wrapper{
     display: flex;
-    flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
   .icon_profile {
-    padding-left: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
   }
 
   .welcome {
@@ -387,6 +391,7 @@
   }
 
   .buy_btn:hover {
+    transition: 1.5s;
     background-color: #BB945F;
     border: none;
     cursor: pointer;
@@ -707,7 +712,7 @@
     display: inline-flex;
     padding: 10px 40px;
     margin-right: 19px;
-    margin-top: 21px;
+    margin-top: 19px;
     align-items: flex-end;
     border-radius: 2px;
     border: 1px solid #0C0C0E;
@@ -759,6 +764,7 @@
     background-color: #BB945F;
     border: none;
     cursor: pointer;
+    transition: 1.5s;
   }
 
   .reader_card {
@@ -822,6 +828,7 @@
   }
 
   .sign_btn:hover {
+    transition: 1.5s;
     background-color: #BB945F;
     border: none;
     cursor: pointer;
@@ -928,7 +935,7 @@
     display: none;
   }
 
-  @media (max-width: 768px) {
+  /* @media (width: 768px) {
 
      .nav-list {
       display: none;
@@ -1082,4 +1089,177 @@
     .rs_link {
       margin-right: 60px;
     }
+  } */
+
+  @media (max-width: 1024px) {
+
+    .navbar {
+     display: none;
+    }
+
+    .overlay {
+     display: none;
+    }
+
+    .library_text {
+      margin-left: 2.5%;
+    }
+
+    .sayan {
+      display: flex;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .icon_profile {
+      margin-bottom: 11px;
+      margin-right: 40px;
+    }
+
+    .burger {
+     width: 45px;
+     height: 20px;
+     flex-shrink: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 8.7px;
+     margin-right: 20px;
+     margin-top: 13px;
+   }
+
+   .burger-line {
+     border: 1px solid #ffffff;
+   }
+
+   .about_description {
+     width: 728px;
+     margin-left: 20px;
+   }
+
+   .tablet_about {
+     display: flex;
+   }
+
+   .about_images {
+     padding-left: 38px;
+   }
+
+   .arrow_1 {
+     display: inline-block;
+     margin-top: 40px;
+     margin-left: 77px;
+   }
+
+   .arrow_2 {
+     display: inline-block;
+     margin-top: 40px;
+     margin-left: 37px;
+   }
+
+   .ab_image:nth-child(n + 2) {
+     display: none;
+   }
+
+   .pag_button {
+     margin-top: 25px;
+   }
+
+   .pag_button:nth-child(n + 4) {
+     display: inline-block;
+   }
+
+   .favorite_variants {
+     width: 768px;
+     white-space: nowrap;
+   }
+
+   .disabled_button {
+     display: none;
+   }
+
+   .bg_description {
+     margin-left: 69px;
+   }
+
+   .disabled_button2 {
+     display: inline-block;
+   }
+
+   .coffee_shop {
+     margin-top: 2px;
+   }
+
+   .coffee_description {
+     width: 728px;
+     margin-left: 19px;
+     letter-spacing: 1.95px;
+   }
+
+   .shop_container {
+     flex-direction: column;
+   }
+
+   .cakes {
+     margin-top: 40px;
+     right: -160px;
+   }
+
+   .cakes_text {
+     right: -247px;
+     top: 0px;
+   }
+
+   .contacts {
+     margin-top: 640px;
+   }
+
+   .contact_map {
+     position: relative;
+     right: 690px;
+     top: 480px;
+   }
+
+   .library_card {
+     margin-top: 516px;
+   }
+
+   .library_container {
+     flex-direction: column;
+   }
+
+   .find_card {
+     margin-left: -20px;
+   }
+
+   .reader_card {
+     text-align: center;
+     align-items: center;
+   }
+
+   .reader_card_text {
+     margin-top: 13px;
+     margin-left: 20px;
+   }
+
+   .reader_card_description {
+     text-align: center;
+     width: 600px;
+     margin-left: 20px;
+     margin-top: 10px;
+   }
+
+   .reader_buttons {
+     margin-left: 20px;
+     margin-top: 4px;
+   }
+
+   .rs_link {
+     margin-right: 60px;
+   }
+ }
+
+  @media (max-width: 1440px) {
   }
