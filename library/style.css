@@ -1128,18 +1128,66 @@
   }
  }
 
- /* @media (max-width: 768px) {
-  .about_images {
-    margin-left: -15px;
+ @media (max-width: 767px) {
+  .about_description {
+    width: 608px;
   }
-  .about {
+
+  .about_images {
+    margin-left: -10px;
+  }
+
+  .arrow_1 {
+    margin-left: 40px;
+  }
+
+  .arrow_2 {
+    margin-left: 10px;
+  }
+
+  .carousel_pagination {
+    margin-left: 50px;
+  }
+
+  .books_container {
+    margin-left: -50px;
+  }
+
+  .favorite_variants {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .season {
+    margin-right: 20px;
+  }
+
+  .coffee_shop {
     display: flex;
   }
-  .about_description {
-    width: 600px;
-    margin-left: 30px;
+
+  .shop_cakes {
+    margin-left: -130px;
   }
-} */
+
+  .coffee_tablet {
+    margin-left: -15px;
+  }
+
+
+  .coffee_shop {
+    width: 640px;
+  }
+
+  .coffee_description {
+    width: 640px;
+  }
+
+  .map {
+    width: 640px;
+    margin-left: -37px;
+  }
+}
 
   @media (max-width: 1440px) {
   }
