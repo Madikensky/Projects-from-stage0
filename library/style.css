@@ -943,8 +943,19 @@
   }
 
   @media (max-width: 1024px) {
-    .navbar {
+
+    .container {
+      max-width: 1024px;
+    }
+
+    .nav-list {
      display: none;
+     padding: 100px 107px;
+     animation: burgerAnimation 1s;
+    }
+
+    .nav-item {
+      margin-bottom: 30px;
     }
 
     .overlay {
@@ -968,22 +979,90 @@
       margin-bottom: 11px;
       margin-right: 40px;
       margin-left: 0px;
+      z-index: 2;
+      position: relative;
     }
 
     .burger {
      width: 45px;
      height: 20px;
-     flex-shrink: 0;
+     /* flex-shrink: 0; */
      display: flex;
-     flex-direction: column;
-     gap: 8.7px;
+     align-items: center;
+     /* flex-direction: column; */
+     /* gap: 8.7px; */
      margin-right: 20px;
      margin-top: 13px;
+     z-index: 2;
+     position: relative;
+     cursor: pointer;
+     animation: burgerAnimation 1s;
    }
 
-   .burger-line {
-     border: 1px solid #ffffff;
+   .burger span {
+    /* border: 1px solid #ffffff; */
+    height: 2px;
+    width: 45px;
+    transform: scale(1);
+    background-color: #ffffff;
+  }
+
+  .burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 45px;
+    background-color:#ffffff;
+    transition: all 0.5s ease 0s;
+  }
+
+  .burger::before {
+    top: 0;
+    height: 1.5px;
+  }
+
+  .burger::after {
+    bottom: 0;
+    height: 1.5px;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
+
+  .burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg);
+    translate: (0, -50%);
+  }
+
+  .burger.active::after {
+    bottom: 40%;
+    transform: rotate(45deg);
+    translate: (0, 50%);
+  }
+
+   .burger-items {
+    display: none;
+    position: absolute;
    }
+
+   .burger_menu {
+    position: relative;
+    z-index: 2;
+   }
+
+   .nav-list.show-nav-list {
+    display: block;
+    background-color: #000;
+    width: 332px;
+    height: 570px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+  }
 
    .favorite_variants {
      width: 768px;
@@ -1137,6 +1216,16 @@
   }
  }
 
+  @keyframes burgerAnimation {
+  from {opacity: 0}
+  to {opacity: 1}
+ }
+
+ @keyframes burger-close {
+  from {opacity: 1}
+  to {opacity: 0}
+ }
+
  @media (max-width: 767px) {
   .about_description {
     width: 608px;
@@ -1199,6 +1288,11 @@
 }
 
   @media (min-width: 1025px) and (max-width: 1439px) {
+
+    .burger-items {
+      display: none;
+    }
+
     .library_text {
       white-space: nowrap;
     }
