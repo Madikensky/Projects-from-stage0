@@ -954,10 +954,6 @@
       width: 100%;
     }
 
-    * {
-      /* border: 2px solid red; */
-    }
-
     .nav-list {
      display: none;
      padding: 100px 107px;
@@ -1078,16 +1074,8 @@
      white-space: nowrap;
    }
 
-   .disabled_button {
-     display: none;
-   }
-
    .bg_description {
      margin-left: 69px;
-   }
-
-   .disabled_button2 {
-     display: inline-block;
    }
 
    .coffee_shop {
@@ -1178,6 +1166,7 @@
 
    .about_description {
     width: 728px;
+    margin-left: 20px;
    }
 
    .about_images {
@@ -1186,6 +1175,7 @@
 
    .tablet_about {
     display: flex;
+    margin-left: 20px;
   }
 
   .about_images {
@@ -1221,7 +1211,13 @@
   }
 
   .coffee_tablet {
-    margin-left: -20px;
+    margin-left: 0px;
+  }
+
+  .line-3 {
+    margin-left: 20px;
+    margin-top: 11px;
+    width: 95%;
   }
  }
 
