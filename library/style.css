@@ -261,6 +261,11 @@
     cursor: pointer;
   }
 
+  /* .line-3 {
+    margin-left: 20px;
+    margin-top: 11px;
+  } */
+
   .seasons {
     color: black;
   }
@@ -909,10 +914,9 @@
   .line-3 {
     height: 1px;
     background: #FFF;
-    /* margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px; */
-    width: 100%;
+    margin-left: 1.4%;
+    margin-top: 11px;
+    width: 97.3%;
   }
 
   .bottom_footer {
