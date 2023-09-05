@@ -27,6 +27,8 @@ menuLinks.forEach((link) => {
 
 const sliderLine = document.querySelector('.slider-line');
 const dots = document.querySelectorAll('.pag_button');
+const prevArrow = document.querySelector(".arrow_1");
+const nextArrow = document.querySelector(".arrow_2");
 
 let position = 0;
 let dotIndex = 0;
@@ -34,8 +36,19 @@ let dotIndex = 0;
 for (let e = 0; e < dots.length; e++) {
   dots[e].addEventListener('click', () => {
     position = 475 * e;
+    if(position === 1900) {
+      nextArrow.classList.add('opacity')
+    } else {
+      nextArrow.classList.remove('opacity')
+    }
+    if(position === 0) {
+      prevArrow.classList.add('opacity')
+    } else {
+      prevArrow.classList.remove('opacity')
+    }
     sliderLine.style.left = -position + "px";
-    currentSlide(e)
+    dotIndex = e;
+    currentSlide(dotIndex)
   });
 }
 
@@ -45,3 +58,33 @@ const currentSlide = (index) => {
   }
   dots[index].classList.add('active-button');
 };
+
+prevArrow.addEventListener("click", () => {
+  if (position !== 0) {
+    position -= 475;
+    sliderLine.style.left = -position + "px";
+    if(position !== 1900) {
+      nextArrow.classList.remove('opacity')
+    }
+    if (position === 0) {
+      prevArrow.classList.add('opacity')
+    }
+    dotIndex--;
+    currentSlide(dotIndex);
+  }
+});
+
+nextArrow.addEventListener("click", () => {
+  if (position !== 1900) {
+    position += 475;
+    prevArrow.classList.remove('opacity')
+    if(position === 1900) {
+      nextArrow.classList.add('opacity')
+    } else {
+      nextArrow.classList.remove('opacity')
+    }
+    sliderLine.style.left = -position + "px";
+    dotIndex++;
+    currentSlide(dotIndex);
+  }
+});

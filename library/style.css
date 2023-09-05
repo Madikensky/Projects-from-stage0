@@ -252,6 +252,10 @@
     display: none;
   }
 
+  .opacity {
+    filter: opacity(30%);
+  }
+
   .button1 {
     background-color: #BB945F;
   }
@@ -980,6 +984,10 @@
 
   @media (max-width: 1024px) {
 
+    .slider-wrapper {
+      width: 450px;
+    }
+
     .container {
       width: 100%;
     }
@@ -1196,16 +1204,16 @@
 
    .about_description {
     width: 728px;
-    margin-left: 20px;
    }
 
-   .about_images {
-    margin-left: 20px;
+   .about-wrapper {
+    display: flex;
+    justify-content: center;
    }
 
    .tablet_about {
     display: flex;
-    margin-left: 20px;
+    justify-content: center;
   }
 
   .about_images {
@@ -1215,17 +1223,12 @@
   .arrow_1 {
     display: inline-block;
     margin-top: 40px;
-    margin-left: 57px;
   }
 
   .arrow_2 {
     display: inline-block;
+    margin-left: 58px;
     margin-top: 40px;
-    margin-left: 37px;
-  }
-
-  .ab_image:nth-child(n + 2) {
-    display: none;
   }
 
   .pag_button {
@@ -1262,7 +1265,16 @@
  }
 
  @media (max-width: 767px) {
-  .about_description {
+
+  .slider-wrapper {
+    width: 450px;
+  }
+
+  .about {
+    margin-left: 25px;
+  }
+
+  /* .about_description {
     width: 608px;
   }
 
@@ -1280,7 +1292,7 @@
 
   .carousel_pagination {
     margin-left: 50px;
-  }
+  } */
 
   .books_container {
     margin-left: -50px;
@@ -1320,9 +1332,38 @@
     width: 640px;
     margin-left: -37px;
   }
+
+  .about-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tablet_about {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about_images {
+    padding-left: 38px;
+  }
+
+  .arrow_1 {
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  .arrow_2 {
+    display: inline-block;
+    margin-left: 58px;
+    margin-top: 40px;
+  }
 }
 
   @media (min-width: 1025px) and (max-width: 1439px) {
+
+    .slider-wrapper {
+      width: 450px;
+    }
 
     .burger-items {
       display: none;
@@ -1446,7 +1487,7 @@
      display: flex;
     }
  
-    .about_images {
+    /* .about_images {
      margin-left: 20px;
     }
  
@@ -1469,11 +1510,36 @@
      display: inline-block;
      margin-top: 40px;
      margin-left: 37px;
-   }
+   } */
+
+   .about-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tablet_about {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about_images {
+    padding-left: 38px;
+  }
+
+  .arrow_1 {
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  .arrow_2 {
+    display: inline-block;
+    margin-left: 58px;
+    margin-top: 40px;
+  }
  
-   .ab_image:nth-child(n + 2) {
+   /* .ab_image:nth-child(n + 2) {
      display: none;
-   }
+   } */
  
    .pag_button {
      margin-top: 25px;
