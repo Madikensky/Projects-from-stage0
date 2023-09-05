@@ -25,5 +25,23 @@ menuLinks.forEach((link) => {
   });
 });
 
-console.log('1. Вёрстка соответствует макету. Ширина экрана 768px - 26/26\n2. Ни на одном из разрешений до 640px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется - 12/12\n3. 11/12 при нажатии на крестик, или на область вне меню, адаптивное меню плавно скрывается, уезжая за экран 0/2');
+const sliderLine = document.querySelector('.slider-line');
+const dots = document.querySelectorAll('.pag_button');
 
+let position = 0;
+let dotIndex = 0;
+
+for (let e = 0; e < dots.length; e++) {
+  dots[e].addEventListener('click', () => {
+    position = 475 * e;
+    sliderLine.style.left = -position + "px";
+    currentSlide(e)
+  });
+}
+
+const currentSlide = (index) => {
+  for (let e of dots) {
+    e.classList.remove('active-button');
+  }
+  dots[index].classList.add('active-button');
+};
