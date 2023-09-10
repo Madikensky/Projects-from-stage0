@@ -139,3 +139,10 @@ const menuNoAuth = document.querySelector('.menu-no-auth');
 iconProfile.addEventListener('click', () => {
   menuNoAuth.removeAttribute('hidden');
 })
+
+
+document.addEventListener('click', (event) => {
+  if(event.target !== iconProfile && event.target !== menuNoAuth && !([...menuNoAuth.children].includes(event.target))) {
+    menuNoAuth.setAttribute('hidden', '')
+  }
+})
