@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="icon" href="assets/img/icons8-music-16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="assets/img/joji_run.png" alt="joji" class="background-image">
+    <main class="main">
+      <div class="container">
+        <div class="player-wrapper">
+          <div class="song-picture">
+            <img src="assets/img/joji_run.png" alt="">
+          </div>
+          <div class="song-player">
+            <div class="song-player-wrapper">
+            <div class="pause-play-title">
+              <img src="assets/img/play.png" alt="play-button"> <!--Не забыть менять кнопку с плэй на паузу и обратно-->
+              <div class="song-title">
+                <p class="author">Joji</p>
+                <p class="title">Glimpse Of Us</p>
+              </div>
+            </div>
+            <div class="next-prev-btn">
+              <img src="assets/img/backward.png" alt="">
+              <img src="assets/img/forward.png" alt="">
+            </div>
+            <div class="audio-track">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
 </html>
