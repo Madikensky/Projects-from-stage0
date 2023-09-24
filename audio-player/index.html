@@ -15,29 +15,51 @@
     />
   </head>
   <body>
-    <img src="assets/img/joji_glimpse_of_us.png" alt="joji" class="background-image">
+    <img
+      src="assets/img/joji_glimpse_of_us.png"
+      alt="joji"
+      class="background-image"
+    />
     <main class="main">
       <div class="container">
         <div class="player-wrapper">
           <div class="song-picture">
-            <img src="assets/img/joji_glimpse_of_us.png" alt="">
+            <img
+              src="assets/img/joji_glimpse_of_us.png"
+              alt=""
+              class="audio-image"
+            />
           </div>
           <div class="song-player">
             <div class="song-player-wrapper">
-            <div class="pause-play-title">
-              <img src="assets/img/play.png" alt="play-button"> <!--Не забыть менять кнопку с плэй на паузу и обратно-->
-              <div class="song-title">
-                <p class="author">Joji</p>
-                <p class="title">Glimpse Of Us</p>
+              <div class="pause-play-title">
+                <img src="assets/img/play.png" alt="play-button" class="play" />
+                <img
+                  src="assets/img/pause.png"
+                  alt="pause-button"
+                  class="pause"
+                />
+                <div class="song-info">
+                  <p class="author">Joji</p>
+                  <p class="title">Glimpse of Us</p>
+                </div>
+              </div>
+              <div class="next-prev-btn">
+                <img src="assets/img/backward.png" alt="" class="prev" />
+                <img src="assets/img/forward.png" alt="" class="next" />
+              </div>
+              <div class="audio-track">
+                <div class="music-length">
+                  <p>3:53</p>
+                </div>
+                <div class="progressBar">
+                  <input type="range" class="progress" min="0" value="0">
+                </div>
+                <div class="current-time">
+                  <p>0:00</p>
+                </div>
               </div>
             </div>
-            <div class="next-prev-btn">
-              <img src="assets/img/backward.png" alt="">
-              <img src="assets/img/forward.png" alt="">
-            </div>
-            <div class="audio-track">
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -45,5 +67,6 @@
     <footer>
       <div class="container"></div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
