@@ -111,3 +111,5 @@ pauseBtn.addEventListener('click', pauseAudio)
 nextBtn.addEventListener('click', playNextAudio)
 prevBtn.addEventListener('click', playPrevAudio)
 audio.addEventListener('ended', playNextAudio)
+
+console.log('Собственная оценка: 60 / 60')
