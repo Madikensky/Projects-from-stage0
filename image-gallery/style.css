@@ -105,3 +105,33 @@ h2 {
     height: 100%;
     border-radius: 20px;
 }
+
+.footer {
+    /* border: 2px solid red; */
+    /* height: 200px; */
+    background-color: black;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-wrapper p, a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+a:hover {
+    color: orange;
+}
+
+.footer-wrapper img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
